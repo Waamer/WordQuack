@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainMenuController">
+   <children>
+      <Text layoutX="423.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main Menu">
+         <font>
+            <Font size="120.0" />
+         </font>
+      </Text>
+      <MFXButton fx:id="newGameButton" layoutX="48.0" layoutY="100.0" onAction="#clickMenuButton" text="New Game">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </MFXButton>
+      <MFXButton fx:id="loadSavedGameButton" layoutX="48.0" layoutY="200.0" onAction="#clickMenuButton" text=" Load Game">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </MFXButton>
+      <MFXButton fx:id="tutorialButton" layoutX="48.0" layoutY="300.0" onAction="#clickMenuButton" text="Tutorial">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </MFXButton>
+      <MFXButton fx:id="progressSettingsButton" layoutX="48.0" layoutY="400.0" onAction="#clickMenuButton" text="Progress">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </MFXButton>
+      <MFXButton fx:id="highscoreButton" layoutX="48.0" layoutY="500.0" onAction="#clickMenuButton" text="Highscores">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </MFXButton>
+      <MFXButton fx:id="settingsButton" layoutX="48.0" layoutY="600.0" onAction="#clickMenuButton" text="Settings">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </MFXButton>
+      <MFXButton fx:id="exitButton" layoutX="14.0" layoutY="14.0" onAction="#clickMenuButton" text="Exit">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </MFXButton>
+      <Pane layoutX="423.0" layoutY="183.0" prefHeight="494.0" prefWidth="857.0" styleClass="contain">
+         <children>
+            <ImageView fitHeight="188.0" fitWidth="195.0" layoutX="675.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/GooseHead2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="317.0" fitWidth="396.0" layoutX="260.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: -15">
+               <image>
+                  <Image url="@Images/SpeechBubble.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="324.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: -15" text="Welcome to our Game!" textAlignment="CENTER" wrappingWidth="249.59999999999997">
+               <font>
+                  <Font size="48.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.9411764740943909" green="0.8588235378265381" blue="0.7254902124404907" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.40784314274787903" green="0.30588236451148987" blue="0.19607843458652496" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

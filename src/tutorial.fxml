@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tutorialController">
+   <children>
+      <MFXButton fx:id="backButton" layoutX="24.0" layoutY="18.0" text="" onAction="#clickBackButton">
+         <graphic>
+            <FontIcon iconLiteral="mdi-keyboard-backspace" iconSize="36" />
+         </graphic>
+      </MFXButton>
+      <Text layoutX="50.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tutorial">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Text>
+      <MFXComboBox fx:id="selectTopic" floatingText="Select Topic" layoutX="340.0" layoutY="109.0" onAction="#topicChange" prefHeight="42.0" prefWidth="180.0" />
+      <Pane layoutX="50.0" layoutY="170.0" prefHeight="500.0" prefWidth="478.0" styleClass="contain">
+         <children>
+            <TextFlow layoutX="20.0" layoutY="21.0" prefHeight="459.0" prefWidth="439.0">
+               <children>
+                  <Text fx:id="topicText" fill="#faf9f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a topic and learn more about the topic here and also practise the topic in the gameplay area to the right!">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </TextFlow>
+         </children></Pane>
+      <Pane layoutX="560.0" layoutY="49.0" prefHeight="226.0" prefWidth="675.0" styleClass="contain">
+         <children>
+            <TextFlow layoutX="20.0" layoutY="20.0" prefHeight="190.0" prefWidth="635.0">
+               <children>
+                  <Text fill="#fbfaf5" strokeType="OUTSIDE" strokeWidth="0.0" text="In the gameplay screen below, you select letters until they make up a word you assume. Then upon clicking the CheckMark button, if one of the placeholder words turn into the word you got from your letter selections, that means you got a word correct! Otherwise, you did not, but no worries this is just practise after all to become better! Below is some practise gameplay, select your desired topic from the 'Select Topic' box to get started'">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+            </TextFlow>
+         </children></Pane>
+      <Pane layoutX="560.0" layoutY="300.0" prefHeight="299.0" prefWidth="675.0" styleClass="contain">
+         <children>
+            <Pane layoutX="69.0" layoutY="179.0" prefHeight="85.0" prefWidth="400.0" style="-fx-background-color: #FBFAF5">
+               <children>
+                  <Text fx:id="inputWord" layoutX="186.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20px" />
+               </children></Pane>
+            <GridPane styleClass="gameButtons" hgap="10.0" layoutX="38.0" layoutY="62.0" prefHeight="80.0" prefWidth="600.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <MFXButton id="Unselected" fx:id="Button00" buttonType="RAISED" onAction="#gameButtonPress" prefHeight="100.0" prefWidth="100.0" text="" />
+                  <MFXButton id="Unselected" fx:id="Button01" buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#gameButtonPress" prefHeight="100.0" prefWidth="100.0" text="" GridPane.columnIndex="5" />
+                  <MFXButton id="Unselected" fx:id="Button02" buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#gameButtonPress" prefHeight="100.0" prefWidth="100.0" text="" GridPane.columnIndex="4" />
+                  <MFXButton id="Unselected" fx:id="Button03" buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#gameButtonPress" prefHeight="100.0" prefWidth="100.0" text="" GridPane.columnIndex="3" />
+                  <MFXButton id="Unselected" fx:id="Button04" buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#gameButtonPress" prefHeight="100.0" prefWidth="100.0" text="" GridPane.columnIndex="2" />
+                  <MFXButton id="Unselected" fx:id="Button05" buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#gameButtonPress" prefHeight="100.0" prefWidth="100.0" text="" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <TextFlow layoutX="476.0" layoutY="179.0" prefHeight="68.0" prefWidth="168.0">
+               <children>
+                  <Text fx:id="talkingText" fill="#fbfaf5" strokeType="OUTSIDE" strokeWidth="0.0" text="Good Luck!"><font><Font size="22.0" /></font></Text>
+               </children>
+            </TextFlow>
+         </children>
+      </Pane>
+      <GridPane layoutX="610.0" layoutY="629.0" prefWidth="500.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Text fx:id="word0" fill="#02111b" strokeType="OUTSIDE" strokeWidth="0.0" text=""><font><Font size="30.0" /></font></Text>
+            <Text fx:id="word1" fill="#02111b" strokeType="OUTSIDE" strokeWidth="0.0" text="" GridPane.columnIndex="1"><font><Font size="30.0" /></font></Text>
+         </children>
+      </GridPane>
+      <MFXButton layoutX="1181.0" layoutY="619.0" onAction="#handleCheckButton" text="">
+         <graphic>
+            <FontIcon iconLiteral="mdi-check" iconSize="36" />
+         </graphic>
+      </MFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #F0DBB9;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProgressController">
+   <children>
+      <MFXButton fx:id="backButton" layoutX="24.0" layoutY="18.0" onAction="#clickBackButton" text="">
+         <graphic>
+            <FontIcon iconLiteral="mdi-keyboard-backspace" iconSize="36" />
+         </graphic>
+      </MFXButton>
+      <MFXComboBox fx:id="selectDifficulty" floatingText="Game Difficulty" layoutX="719.0" layoutY="563.0" prefHeight="42.0" prefWidth="180.0" />
+      <Text id="" layoutX="465.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parental Settings" wrappingWidth="397.66827392578125">
+         <font>
+            <Font size="52.0" />
+         </font></Text>
+      <Text id="" layoutX="391.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Progress Tracker" wrappingWidth="545.0682983398438">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Text>
+      <Text layoutX="410.0" layoutY="599.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Difficulty">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Text>
+      <Text layoutX="203.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Highest Level Achieved:">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="719.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accuracy Rate:">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="771.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="High Score:" wrappingWidth="163.199951171875">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="282.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Time Spent:" wrappingWidth="255.2789306640625">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Text fx:id="level" layoutX="554.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Text fx:id="time" layoutX="554.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Text fx:id="accuracy" layoutX="946.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Text fx:id="highscore" layoutX="946.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

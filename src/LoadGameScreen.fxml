@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoadGameScreenController">
+   <children>
+      <MFXButton fx:id="backButton" layoutX="24.0" layoutY="18.0" onAction="#clickBackButton" text="">
+         <graphic>
+            <FontIcon iconLiteral="mdi-keyboard-backspace" iconSize="36" />
+         </graphic>
+      </MFXButton>
+      <Text layoutX="365.0" layoutY="174.0" text="Load Saved Game" wrappingWidth="613.78369140625">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Text>
+      <MFXButton fx:id="button1" layoutX="130.0" layoutY="270.0" onAction="#clickGameButton" prefHeight="170.0" prefWidth="327.0" styleClass="brownButton" stylesheets="@styles.css" text="Saved Game 1" textFill="#fbfaf5">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </MFXButton>
+      <MFXButton fx:id="button2" layoutX="473.0" layoutY="270.0" onAction="#clickGameButton" prefHeight="170.0" prefWidth="327.0" styleClass="brownButton" text="Saved Game 2" textFill="#fbfaf5">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </MFXButton>
+      <MFXButton fx:id="button3" layoutX="816.0" layoutY="270.0" onAction="#clickGameButton" prefHeight="170.0" prefWidth="327.0" styleClass="brownButton" stylesheets="@styles.css" text="Saved Game 3" textFill="#fbfaf5">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </MFXButton>
+      <MFXButton fx:id="button4" layoutX="130.0" layoutY="460.0" onAction="#clickGameButton" prefHeight="170.0" prefWidth="327.0" styleClass="brownButton" text="Saved Game 4" textFill="#fbfaf5">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </MFXButton>
+      <MFXButton fx:id="button5" layoutX="473.0" layoutY="460.0" onAction="#clickGameButton" prefHeight="170.0" prefWidth="327.0" styleClass="brownButton" text="Saved Game 5" textFill="#fbfaf5">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </MFXButton>
+      <MFXButton fx:id="button6" layoutX="816.0" layoutY="460.0" onAction="#clickGameButton" prefHeight="170.0" prefWidth="327.0" styleClass="brownButton" stylesheets="@styles.css" text="Saved Game 6" textFill="#fbfaf5">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </MFXButton>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Goose_Logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

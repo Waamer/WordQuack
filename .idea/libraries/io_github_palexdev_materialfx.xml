@@ -1,0 +1,38 @@
+<component name="libraryTable">
+  <library name="io.github.palexdev.materialfx" type="repository">
+    <properties maven-id="io.github.palexdev:materialfx:11.13.1" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/materialfx-11.13.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-controls-17.0.2-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-controls-17.0.2-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-graphics-17.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-fxml-17.0.2-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-fxml-17.0.2-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-controls-17.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-media-17.0.2-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-media-17.0.2-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-base-17.0.2-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-base-17.0.2-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-swing-17.0.2-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-swing-17.0.2-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-graphics-17.0.2-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-graphics-17.0.2-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-base-17.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-web-17.0.2-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-web-17.0.2-win.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javafx-media-17.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gradle-maven-publish-plugin-0.18.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-stdlib-1.5.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/annotations-13.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-stdlib-common-1.5.21.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/moshi-1.12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/okio-2.10.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/retrofit-2.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/okhttp-3.14.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/converter-moshi-2.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/virtualizedfx-11.2.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

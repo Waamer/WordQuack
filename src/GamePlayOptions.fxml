@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GamePlayOptionsController">
+   <children>
+      <Text fill="#684e32" layoutX="450.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Name" wrappingWidth="429.13616943359375">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <TextField fx:id="playerName" layoutX="515.0" layoutY="188.0" prefHeight="42.0" prefWidth="231.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Text fill="#684e32" layoutX="355.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose Your Learning Topic!" wrappingWidth="657.3903198242188">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <MFXButton fx:id="verbButton" layoutX="210.0" layoutY="440.0" onAction="#clickGameplayOptionsButton" prefHeight="195.0" prefWidth="275.0" styleClass="brownButton" stylesheets="@styles.css" text="Verbs" textFill="#fbfaf5">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </MFXButton>
+      <MFXButton fx:id="adjectiveButton" layoutX="510.0" layoutY="440.0" onAction="#clickGameplayOptionsButton" prefHeight="195.0" prefWidth="275.0" styleClass="brownButton" stylesheets="@styles.css" text="Adjectives" textFill="#fbfaf5">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </MFXButton>
+      <MFXButton fx:id="nounButton" layoutX="810.0" layoutY="440.0" onAction="#clickGameplayOptionsButton" prefHeight="195.0" prefWidth="275.0" styleClass="brownButton" stylesheets="@styles.css" text="Nouns" textFill="#fbfaf5">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </MFXButton>
+      <MFXButton fx:id="backButton" layoutX="24.0" layoutY="18.0" onAction="#clickGameplayOptionsButton" text="">
+         <graphic>
+            <FontIcon iconLiteral="mdi-keyboard-backspace" iconSize="36" />
+         </graphic></MFXButton>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Goose_Logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

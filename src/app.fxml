@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppController">
+   <children>
+      <MFXButton fx:id="startGameButton" buttonType="RAISED" layoutX="442.0" layoutY="574.0" onAction="#clickStartGameButton" text="Start Game">
+         <font>
+            <Font name="Arial" size="60.0" />
+         </font></MFXButton>
+      <ImageView id="logo" fitHeight="560.0" fitWidth="1000.0" layoutX="360.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="Images/Goose_Logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

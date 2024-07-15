@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+Text{
+    -fx-font-family: "Urbanist", sans-serif;
+}
+
+/*------ CSS for Containers Lines 8-14 ------*/
+AnchorPane{
+    -fx-background-color: #F0DBB9;
+}
+
+.contain {
+    -fx-background-color: #684E32;
+}
+
+/*------ Custom CSS for Progress Bar Lines 17-21 ------*/
+#progressBar .track{
+    -fx-stroke: #02111B;
+    -fx-stroke-width: 0.5;
+    -fx-fill: #FBFAF5;
+}
+
+/*------ Custom CSS for Tutorial screen ComboBox Lines 24-59 ------*/
+MFXComboBox {
+    -fx-border-color: transparent transparent #684E32 transparent;
+    -fx-border-radius: 0;
+    -fx-border-width: 2;
+    -fx-padding: 3 -3 3 3;
+    -fx-background-color: transparent;
+    -fx-font-size: 16px;
+}
+
+MFXComboBox .caret .mfx-font-icon {
+    -mfx-color: #684E32;
+}
+
+MFXComboBox .caret .mfx-ripple-generator{
+    -mfx-ripple-color: rgba(104, 78, 50, 0.75)
+}
+
+MFXComboBox .floating-text{
+    -fx-background-color: transparent;
+    -fx-text-fill: #684E32;
+    -fx-font-size: 13px;
+}
+
+MFXComboBox .combo-popup .virtual-flow{
+    -fx-background-color: #FBFAF5;
+}
+
+MFXComboBox .combo-popup .virtual-flow .data-label{
+    -fx-text-fill: #684E32;
+    -fx-font-size: 19px;
+}
+
+MFXComboBox .virtual-flow .mfx-combo-box-cell:hover,
+MFXComboBox .virtual-flow .mfx-combo-box-cell:selected{
+    -fx-background-color: derive(#684E32, 90%);
+}
+
+/* Custom CSS for Tutorial screen Buttons */
+.gameButtons > MFXButton{
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-font-family: Urbanist;
+}
+
+.brownButton{
+        -fx-background-color: "#684E32";
+}

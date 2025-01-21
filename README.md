@@ -1,7 +1,7 @@
 # WordQuack
 Group: 60
 
-Group Members: Tsid Tomori, Talha, Arleen Hayer, Kabir Pathan
+Group Members: Tsid Tomori, Talha Chaudhry, Arleen Hayer, Kabir Pathan, and of course myself Waleed Aamer
 
 Western Uni Course: CS2212
 ### Description of the game
